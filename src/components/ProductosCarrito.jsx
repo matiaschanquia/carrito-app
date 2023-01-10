@@ -17,6 +17,22 @@ const ProductosCarrito = (props) => {
         location.reload();
     }
 
+    const clickHandlerComprar = () => {
+        if(props.productosCarrito.length === 0) {
+            alert("No tiene ningún producto en el carrito.");
+            return;
+        }
+        let mensaje = "Hola, quiero comprar los siguientes productos:%0a";
+        props.productosCarrito.forEach(p => {
+            mensaje += `${p.name} x${p.cantidad} = $${p.cantidad * p.precio}%0a`;
+        });
+        mensaje += `Total: $${precioTotal()}`;
+        mensaje = mensaje.replace(/ /g, "+");
+        const url = `https://api.whatsapp.com/send?&text=${mensaje}`;
+        let win = window.open(url, "_blank");
+        win.focus();
+    }
+
     return(
         <div className="container-productos-carrito">
             <h2 className="titulo">Carrito</h2>
@@ -49,7 +65,7 @@ const ProductosCarrito = (props) => {
                         precioTotal()    
                     }
                 </h2>
-                <button className="comprar" onClick={() => alert("Esto llevaría a un link de WhatsApp.")}>Comprar</button>
+                <button className="comprar" onClick={clickHandlerComprar}>Comprar</button>
             </div>
         </div>
     )

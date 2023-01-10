@@ -10,7 +10,7 @@ const Producto = (props) => {
         setCheck(true);
         setTimeout(() => {
             setCheck(false);
-        }, 2500)
+        }, 2000)
     };
     return (
         <div className="container-producto">
