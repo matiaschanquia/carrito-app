@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;600;900&family=Lobster+Two:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+.container-app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #ffffbd;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 15px 20px 12px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.483);
+}
+
+.logo {
+    color: #FDD303;
+    font-family: 'Lobster Two', cursive;
+    text-shadow: 2px 2px 0 black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > img {
+    width: 50px;
+    margin-top: -10px;
+}
+
+.container-carrito {
+    background-color: #FDD303;
+    border-radius: 9px;
+    padding: 8px 12px;
+}
+
+.carrito {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    align-items: center;
+}
+
+.container-img-principal {
+    height: calc(100vh - 80px);
+    position: relative;
+}
+
+.container-img-principal > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img-principal > h2 {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #FDD303;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 20px 0 20px 10px;
+    color: #feff00;
+    text-shadow: 2px 2px 2px black;
+}
+
+.container-productos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+.container-producto {
+    width: 90%;
+    max-width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.container-producto > figure {
+    height: 220px;
+}
+
+.container-producto > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container-producto > h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.container-producto > div {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-producto > div > h4 {
+    color: red;
+}
+
+.container-producto > div > button {
+    padding: 4px 6px;
+    background-color: #FDD303;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.productos-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: gray;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.container-producto-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.container-producto-carrito > button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 3px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-producto-carrito > figure {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+}
+
+.container-producto-carrito > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.precio-total {
+    text-align: right;
+}
+
+.comprar {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    padding: 8px 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #feff00;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.comprar:hover {
+    transform: scale(0.95);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(40, 40, 40);
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes > a > img {
+    height: 30px;
+    transition: filter .2s ease-in-out;
+}
+
+
+.redes > a > img:hover {
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.445));
+}
