@@ -153,6 +153,11 @@ a {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 5px;
+    transition: transform .2s ease-in-out;
+}
+
+.container-producto > div > button:hover {
+    transform: scale(1.05);
 }
 
 .productos-carrito {
