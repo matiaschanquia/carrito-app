@@ -69,10 +69,6 @@ a {
     align-items: center;
 }
 
-.container-home {
-    margin-top: 86px;
-}
-
 .container-img-principal {
     height: calc(100vh - 80px);
     position: relative;
@@ -222,6 +218,10 @@ a {
 
 .comprar:hover {
     transform: scale(0.95);
+}
+
+.header-invisible {
+    margin-top: 86px;
 }
 
 /* FOOTER */

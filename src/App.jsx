@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container-app">
       <Header/>
-      <div></div>
+      <div className="header-invisible"></div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/carrito" element={<ProductosCarrito />} />
