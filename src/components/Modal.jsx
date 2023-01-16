@@ -1,5 +1,4 @@
 
-
 const Modal = ({ children, isOpen, modalClose }) => {
 
     const handleClickContentModal = (e) => {
