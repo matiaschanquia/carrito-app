@@ -37,9 +37,9 @@ const products = [
     },
     {
         id: 7,
-        name: "Alfajor Terrabusi",
-        precio: 82,
-        image: "https://masonlineprod.vtexassets.com/arquivos/ids/204540-1200-auto?v=637850725828000000&width=1200&height=auto&aspect=true",
+        name: "Jugo De Naranja 1l",
+        precio: 266,
+        image: "https://arcordiezb2c.vteximg.com.br/arquivos/ids/162428/Jugo-de-Naranja-Cepita-1-Lt-1-4949.jpg?v=637484885950530000",
     },
     {
         id: 8,
