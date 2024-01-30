@@ -8,8 +8,8 @@ import store from "./redux/store";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={store}>
-        <HashRouter>
+        <BrowserRouter>
             <App />
-        </HashRouter>
+        </BrowserRouter>
     </Provider>
 );
